@@ -1,0 +1,121 @@
+Query OK, 0 rows affected (0.134 sec)
+
+Query OK, 0 rows affected (0.076 sec)
+
+Query OK, 0 rows affected (0.209 sec)
+
+Query OK, 1 row affected, 1 warning (0.025 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
+Query OK, 1 row affected (0.050 sec)
+
+Query OK, 1 row affected (0.050 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
+Query OK, 1 row affected, 1 warning (0.025 sec)
+
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| id     | int(11)     | NO   | PRI | NULL    | auto_increment |
+| breed  | varchar(15) | YES  |     | NULL    |                |
+| name   | varchar(25) | YES  |     | NULL    |                |
+| weight | double      | YES  |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+4 rows in set (0.001 sec)
+
++----+-----------------+-------+--------+
+| id | breed           | name  | weight |
++----+-----------------+-------+--------+
+|  1 | Blue Meral Coll | Rizzo |   30.4 |
+|  2 | Tri color Colli | Lexi  |   28.8 |
+|  3 | Colli           | Sadie |   29.6 |
+|  4 | Bull dog        | Zach  |   29.4 |
+|  5 | Yappy dog       | Karen |    5.4 |
+|  6 | Golden Retrieve | Josh  |   32.4 |
++----+-----------------+-------+--------+
+6 rows in set (0.001 sec)
+
+Query OK, 0 rows affected (0.173 sec)
+
+Query OK, 1 row affected (0.017 sec)
+
+Query OK, 1 row affected (0.017 sec)
+
+Query OK, 1 row affected (0.017 sec)
+
+Query OK, 1 row affected (0.017 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
+Query OK, 1 row affected (0.025 sec)
+
++-------+----------+------+-----+---------+----------------+
+| Field | Type     | Null | Key | Default | Extra          |
++-------+----------+------+-----+---------+----------------+
+| id    | int(11)  | NO   | PRI | NULL    | auto_increment |
+| dog   | int(11)  | YES  | MUL | NULL    |                |
+| dt    | datetime | YES  |     | NULL    |                |
++-------+----------+------+-----+---------+----------------+
+3 rows in set (0.001 sec)
+
++----+------+---------------------+
+| id | dog  | dt                  |
++----+------+---------------------+
+|  1 |    1 | 2019-03-10 02:55:05 |
+|  2 |    2 | 2020-01-16 02:55:05 |
+|  3 |    3 | 2021-11-09 02:55:05 |
+|  4 |    4 | 2021-12-29 02:55:05 |
+|  5 |    5 | 2020-08-24 02:55:05 |
+|  6 |    6 | 2022-06-18 02:55:05 |
+|  7 |    1 | 2020-07-25 02:55:05 |
+|  8 |    2 | 2021-01-02 02:55:05 |
+|  9 |    3 | 2021-08-13 02:55:05 |
+| 10 |    4 | 2021-03-10 02:55:05 |
++----+------+---------------------+
+10 rows in set (0.001 sec)
+
+Query OK, 0 rows affected (0.326 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 10 rows affected (0.031 sec)
+Rows matched: 10  Changed: 10  Warnings: 0
+
+Query OK, 1 row affected (0.033 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.025 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.050 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.040 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
++----+------+---------------------+-------+
+| id | dog  | dt                  | cost  |
++----+------+---------------------+-------+
+|  1 |    1 | 2019-03-10 02:55:05 |     0 |
+|  2 |    2 | 2020-01-16 02:55:05 | 26.98 |
+|  3 |    3 | 2021-11-09 02:55:05 |     0 |
+|  4 |    4 | 2021-12-29 02:55:05 | 15.62 |
+|  5 |    5 | 2020-08-24 02:55:05 |     0 |
+|  6 |    6 | 2022-06-18 02:55:05 |  5.65 |
+|  7 |    1 | 2020-07-25 02:55:05 |     0 |
+|  8 |    2 | 2021-01-02 02:55:05 | 36.92 |
+|  9 |    3 | 2021-08-13 02:55:05 |     0 |
+| 10 |    4 | 2021-03-10 02:55:05 |     0 |
++----+------+---------------------+-------+
+10 rows in set (0.001 sec)
+
