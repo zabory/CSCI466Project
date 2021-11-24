@@ -120,3 +120,34 @@ VALUE
         ('12930839','25 W Kaley St','','Orlando','FL','32806','USA','7791209239'),
         ('92830171','809 Griffith Ave','','Las Vegas', 'NV', '89104', 'USA','1209382307'),
         ('13792610','621 S Plymouth Ct','', 'Chicago', 'IL', '60605', 'USA', '7792703338');
+
+INSERT  INTO    CART
+VALUE
+        ('1','12345678','12','1'),
+        ('2','12345678','3','2'),
+        ('3','13792610','7','1'),
+        ('4','92830171','9','4'),
+        ('5','13792610','1','1'),
+        ('6','10129832','5','1'),
+        ('7','92830171','12','2'),
+        ('8','10129832','20','1'),
+        ('9','13792610','17','1'),
+        ('10','13792610','5','1'),
+        ('11','12345678','8','1'),
+        ('12','10129832','11','1'),
+        ('13','10129832','1','1'),
+        ('14','92830171','19','7'),
+        ('15','13792610','19','1');
+
+# For CHECKINGOUT table, I think it is kindof automaticlly to insert 3 values, I have inserted some values here manually to make it easier to debug when programming IN PHP
+INSERT  INTO    CHECKINGOUT
+VALUE
+        ('10000000','1','0.00'),
+        ('10000001','2','0'),
+        ('10000002','3','100'),
+        ('10000003','4','30');
+
+# Same as CHECKINGOUT table. Just try to make it easier to debug when programming IN PHP
+INSERT  INTO    ORDERSTATUS
+VALUE
+        ('10000000','1','12345678','12','13792610','Finish','Arrive','');
