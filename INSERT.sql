@@ -112,4 +112,11 @@ VALUE
         ('12930839','0983248972128231','01','2024','190','Michael','Taylor'),
         ('92830171','7918273003801237','07','2023','077','Stacy','Anderson'),
         ('13792610','7891237943095873','10','2026','592','Jayden','Brown');
-SELECT * FROM PAYMENT;
+
+INSERT  INTO    BILLINGINFO
+VALUE
+        ('12345678','1231W LINCOLN HWY','APT01','DeKalb','IL','60115','USA','6505130514'),
+        ('10129832','545 1st Ave','Floor 1','New York','NY','10016','USA','8302123892'),
+        ('12930839','25 W Kaley St','','Orlando','FL','32806','USA','7791209239'),
+        ('92830171','809 Griffith Ave','','Las Vegas', 'NV', '89104', 'USA','1209382307'),
+        ('13792610','621 S Plymouth Ct','', 'Chicago', 'IL', '60605', 'USA', '7792703338');
