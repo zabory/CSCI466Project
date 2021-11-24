@@ -1,0 +1,61 @@
++----------+----------+--------+----------+------------+---------------------------+
+| ID       | FNAME    | MNAME  | LNAME    | PHONE      | EMAIL                     |
++----------+----------+--------+----------+------------+---------------------------+
+| 10129832 | Ava      | Louise | Johnson  | 8302123892 | alskjdi@gmail.com         |
+| 12345678 | Isabella | Lee    | Williams | 6505130514 | z1909177@students.niu.edu |
+| 12930839 | Michael  | Kai    | Taylor   | 7791209239 | 68213@yahoo.com           |
+| 13792610 | Jayden   |        | Brown    | 7792703338 | jd1997@gmail.com          |
+| 92830171 | Stacy    | Claire | Anderson | 1209382307 | StacyCA@yahoo.com         |
++----------+----------+--------+----------+------------+---------------------------+
+
++-----+------------------------------------------+-------+---------------------+------------+
+| IID | INAME                                    | PRICE | IEDITION            | ICONDITION |
++-----+------------------------------------------+-------+---------------------+------------+
+|   1 | The Legend of Zelda: Breath of the Wild  | 39.99 | STANDARD            | NEW        |
+|   2 | The Legend of Zelda: Breath of the Wild  | 37.99 | STANDARD            | PRE-OWNED  |
+|   3 | The Legend of Zelda: Breath of the Wild  | 39.99 | STANDARD            | DIGITAL    |
+|   4 | The Legend of Zelda: Breath of the Wild  | 79.98 | PLUS EXPANSION PASS | DIGITAL    |
+|   5 | New Super Mario Bros U Deluxe            | 39.99 | STANDARD            | NEW        |
+|   6 | New Super Mario Bros U Deluxe            | 37.99 | STANDARD            | PRE-OWNED  |
+|   7 | New Super Mario Bros U Deluxe            | 39.99 | STANDARD            | DIGITAL    |
+|   8 | Kirby Star Allies                        | 39.99 | STANDARD            | NEW        |
+|   9 | Kirby Star Allies                        | 37.99 | STANDARD            | PRE-OWNED  |
+|  10 | Kirby Star Allies                        | 39.99 | STANDARD            | DIGITAL    |
+|  11 | Fire Emblem: Three Houses                | 39.99 | STANDARD            | NEW        |
+|  12 | Fire Emblem: Three Houses                | 37.99 | STANDARD            | PRE-OWNED  |
+|  13 | Fire Emblem: Three Houses                | 39.99 | STANDARD            | DIGITAL    |
+|  14 | Fire Emblem: Three Houses                | 84.98 | PLUS EXPANSION PASS | DIGITAL    |
+|  15 | Xenoblade Chronicles: Definitive Edition | 39.99 | STANDARD            | NEW        |
+|  16 | Xenoblade Chronicles: Definitive Edition | 37.99 | STANDARD            | PRE-OWNED  |
+|  17 | Xenoblade Chronicles: Definitive Edition | 39.99 | STANDARD            | DIGITAL    |
+|  18 | Splatoon 2                               | 39.99 | STANDARD            | NEW        |
+|  19 | Splatoon 2                               | 37.99 | STANDARD            | PRE-OWNED  |
+|  20 | Splatoon 2                               | 39.99 | STANDARD            | DIGITAL    |
++-----+------------------------------------------+-------+---------------------+------------+
+
++----------+-----+------+
+| EMPID    | IID | QTY  |
++----------+-----+------+
+| 10129832 |   2 |  301 |
+| 10129832 |   3 |  188 |
+| 12345678 |   4 |   50 |
+| 12345678 |  11 |  500 |
+| 12345678 |  15 |  500 |
+| 12345678 |  19 |   50 |
+| 12345678 |  20 |  200 |
+| 12930839 |   1 |  100 |
+| 12930839 |   7 |  230 |
+| 12930839 |  10 |  700 |
+| 12930839 |  16 |  398 |
+| 12930839 |  17 |   40 |
+| 13792610 |   3 |  102 |
+| 13792610 |   8 |  200 |
+| 13792610 |   9 |  300 |
+| 13792610 |  12 |  500 |
+| 13792610 |  18 |  500 |
+| 92830171 |   2 |  500 |
+| 92830171 |   5 |  500 |
+| 92830171 |   6 |  200 |
+| 92830171 |  13 |  219 |
+| 92830171 |  14 |  438 |
++----------+-----+------+
