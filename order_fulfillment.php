@@ -1,8 +1,4 @@
 <html>
-<!--
- An order fulfillment page that allows store employees to see details on individual orders, and mark
-them as shipped, add notes, contact the user, etc
--->
 <head>
 	<title>Employee order fulfillment</title>
 </head>
