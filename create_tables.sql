@@ -93,14 +93,13 @@ CREATE TABLE IF NOT EXISTS CART
 
 CREATE TABLE IF NOT EXISTS ORDERSTATUS
 (
-    OID     INT(8)          NOT NULL    AUTO_INCREMENT,     -- ORDER ID
     UID     INT(8)          NOT NULL,                       -- WHO CREATE THE ORDER
     IID     INT(8)          NOT NULL,                       -- WHAT ITEM IN THE ORDER
     EMPID   INT(8)          NOT NULL,                       -- WHO PROCESS THE ORDER
     STATUS  CHAR(10)        DEFAULT 'Pending',              -- THE STATUS OF THE ORDER
     NOTE    TEXT                    ,
 
-    PRIMARY KEY(OID,UID,IID,EMPID),
+    PRIMARY KEY(UID,IID,EMPID),
      
     FOREIGN KEY (UID)       REFERENCES HUMAN(ID),
     FOREIGN KEY (IID)       REFERENCES ITEM(IID),
