@@ -25,7 +25,7 @@ try{
 				$dsn = "mysql:host=courses;dbname=z1809120";
 				$pdo = new PDO($dsn, "z1809120", "1998Jun01");
 
-				$sql = "SELECT UID FROM ORDERSTATUS WHERE UID = ?";
+				$sql = "SELECT UID FROM ORDERSTATUS WHERE UID = ? AND STATUS = 'Pending'";
 				$prepared = $pdo->prepare($sql);
 				$success = $prepared->execute(array($_GET["userid"]));
 				if($success){
