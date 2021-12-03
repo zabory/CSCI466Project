@@ -4,7 +4,9 @@ VALUE
         ('Jayden','','Brown','7792703338','jd1997@gmail.com'),
         ('Ava','Louise','Johnson','8302123892','alskjdi@gmail.com'),
         ('Stacy','Claire','Anderson','1209382307','StacyCA@yahoo.com'),
-        ('Michael','Kai','Taylor','7791209239','68213@yahoo.com');
+        ('Michael','Kai','Taylor','7791209239','68213@yahoo.com'),
+        ('Balala','Ming','Black','1789270384','809324dewer@yahoo.com'),
+        ('Jackson','','Green','2918728345','j3l2j9d@gmail.com');
 
 INSERT  INTO    ITEM(INAME,PRICE,IEDITION,ICONDITION,TAX,IDETAIL,TPRICE,REWARD)
 VALUE
@@ -164,7 +166,7 @@ VALUE
         ('2','12','4','Finish',''),
         ('1','5','5','Pending','Please call me when arrive.'),
         ('5','2','1','Finish',''),
-        ('1','2','5','Shipping',''),
+        ('6','2','5','Shipping',''),
         ('3','12','4','Pending',''),
         ('4','17','3','Finish','Please call me when arrive.'),
-        ('4','1','3','Shipping','');
+        ('7','1','3','Shipping','');
