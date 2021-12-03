@@ -3,7 +3,7 @@
 	<title>Employee order status</title>
 </head>
 <body>
-<h1> Outstanding orders page </h1>
+<h1> User orders page </h1>
 <?php
 function draw_table($rows){
 	echo "<table border=1 cellspacing=1>";
@@ -22,12 +22,12 @@ function draw_table($rows){
 	echo "</table>";
 }
 try{
-				$dsn = "mysql:host=courses;dbname=z1909183";
-				$pdo = new PDO($dsn, "z1909183", "2000Nov03");
+				$dsn = "mysql:host=courses;dbname=z1809120";
+				$pdo = new PDO($dsn, "z1809120", "1998Jun01");
 
-				$sql = "SELECT UID FROM ORDERSTATUS";
+				$sql = "SELECT UID FROM ORDERSTATUS WHERE UID = ?";
 				$prepared = $pdo->prepare($sql);
-				$success = $prepared->execute(array());
+				$success = $prepared->execute(array($_GET["userid"]));
 				if($success){
 					$arrays = $prepared->fetchAll(PDO::FETCH_ASSOC);
 					foreach($arrays as $record){
@@ -35,17 +35,16 @@ try{
 						
 						$sql = "SELECT FNAME FROM HUMAN WHERE ID = ?";
 						$prepared = $pdo->prepare($sql);
-						$success = $prepared->execute(array($UID));
+						$success = $prepared->execute(array($_GET["userid"]));
 						if($success){
 							$name = $prepared->fetchAll(PDO::FETCH_ASSOC)[0]["FNAME"];
 							echo "<h2>Order for $name</h2>";
-						}
-						
-						$orderSQL = "SELECT ITEM.IID, ITEM.INAME AS Item, STATUS FROM ORDERSTATUS INNER JOIN ITEM ON ORDERSTATUS.IID=ITEM.IID WHERE UID = ?";
-						$orderPrepared = $pdo->prepare($orderSQL);
-						$orderSuccess = $orderPrepared->execute(array($UID));
-						if($orderSuccess){
-							draw_table($orderPrepared->fetchAll(PDO::FETCH_ASSOC));
+							$sql2 = "SELECT ITEM.IID, ITEM.INAME AS Item, SELEQTY AS Quantity FROM CART INNER JOIN ITEM ON CART.IID=ITEM.IID WHERE UID = ?";
+							$prepared2 = $pdo->prepare($sql2);
+							$success2 = $prepared2->execute(array($UID));
+							if($success2){
+								draw_table($prepared2->fetchAll(PDO::FETCH_ASSOC));
+							}
 						}
 					}
 				}

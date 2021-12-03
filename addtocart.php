@@ -1,8 +1,8 @@
 <?php 
 // connect to database
 try {
-	$dsn = "mysql:host=courses;dbname=z1887865";   // -> what database are we using??
-	$pdo = new PDO($dsn, "z1887865", "1987Mar02");
+	$dsn = "mysql:host=courses;dbname=z1809120";
+				$pdo = new PDO($dsn, "z1809120", "1998Jun01");
 }
 catch(PDOexception $e) {
 	echo "Connection to database failed: " . $e->getMessage();

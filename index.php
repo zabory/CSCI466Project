@@ -8,8 +8,8 @@
 <?php 
 // connect to database
 try {
-	$dsn = "mysql:host=courses;dbname=z1887865";   // -> what database are we using??
-	$pdo = new PDO($dsn, "z1887865", "1987Mar02");
+	$dsn = "mysql:host=courses;dbname=z1809120";
+	$pdo = new PDO($dsn, "z1809120", "1998Jun01");
 }
 catch(PDOexception $e) {
 	echo "Connection to database failed: " . $e->getMessage();
@@ -71,7 +71,7 @@ catch(PDOexception $e) {
 	if($row2["ITEMCNT"]>0)
 	{
 ?>  <li><a href ="order_emp.php?userid=<?php echo $userID; ?>">List of Orders</a> </li>
-    <li><a href ="order_fullfillment.php?userid=<?php echo $userID; ?>">Order Fullfillment</a> </li>
+    <li><a href ="order_fulfillment.php?userid=<?php echo $userID; ?>">Order Fullfillment</a> </li>
 	
 <?php
 	}

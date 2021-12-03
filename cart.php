@@ -13,12 +13,12 @@
 					$sql = "UPDATE CART SET SELEQTY = ? WHERE UID = ? AND IID = ?";
 					$itemID = str_replace('item', '', $key);
 					$prepared = $pdo->prepare($sql);
-					$success = $prepared->execute(array($item, $_GET["UID"], $itemID));
+					$success = $prepared->execute(array($item, $_GET["userid"], $itemID));
 				} else {
 					$sql = "DELETE FROM CART WHERE UID = ? AND IID = ?";
 					$itemID = str_replace('item', '', $key);
 					$prepared = $pdo->prepare($sql);
-					$success = $prepared->execute(array($_GET["UID"], $itemID));
+					$success = $prepared->execute(array($_GET["userid"], $itemID));
 				}
 			}
 		}
@@ -47,17 +47,17 @@
 				echo "</tr>";
 			}
 			echo "</table>";
-			$id = $_GET["UID"];
-			echo "<input type=\"hidden\" name=\"UID\" value=\"$id\"/>";
+			$id = $_GET["userid"];
+			echo "<input type=\"hidden\" name=\"userid\" value=\"$id\"/>";
 			echo "<input type=\"submit\" value=\"Update Quantity\">";
 			echo "</form>";
 		}
 		try{
-			if(array_key_exists("UID", $_GET)){
+			if(array_key_exists("userid", $_GET)){
 				$dsn = "mysql:host=courses;dbname=z1809120";
 				$pdo = new PDO($dsn, "z1809120", "1998Jun01");
 				
-				$id = $_GET["UID"];
+				$id = $_GET["userid"];
 				
 				$sql = "SELECT FNAME FROM HUMAN WHERE ID = ?";
 				$prepared = $pdo->prepare($sql);
@@ -81,8 +81,8 @@
 		</br>
 		<form action="http://students.cs.niu.edu/~z1809120/checkout.php" method="GET">
 			<?php
-			$UID = $_GET["UID"];
-				echo "<input type=\"hidden\" name=\"UID\" value=\"$UID\"/>";
+			$UID = $_GET["userid"];
+				echo "<input type=\"hidden\" name=\"userid\" value=\"$UID\"/>";
 			?>
 			<input type="submit" value="Checkout">
 		</form>

@@ -22,8 +22,8 @@ function draw_table($rows){
 	echo "</table>";
 }
 try{
-				$dsn = "mysql:host=courses;dbname=z1909185";
-				$pdo = new PDO($dsn, "z1909185", "2001Dec04");
+				$dsn = "mysql:host=courses;dbname=z1809120";
+				$pdo = new PDO($dsn, "z1809120", "1998Jun01");
 
 				$sql = <<<SQL
                 SELECT *

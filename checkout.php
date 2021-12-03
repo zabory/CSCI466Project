@@ -46,7 +46,7 @@ submitting an order.
 		
 		echo "<p>Total cost:$total</p>";
 	}
-	$UID = $_GET["UID"];
+	$UID = $_GET["userid"];
 	
 	try {
 		$dsn = "mysql:host=courses;dbname=z1809120";
@@ -113,7 +113,7 @@ submitting an order.
 		<label for="Notes">Notes:</label>
 		<input type="text" id="Notes" name="Notes"><br>
 		<?php 
-			$UID = $_GET["UID"];
+			$UID = $_GET["userid"];
 			echo "<input type=\"hidden\" id=\"UID\" name=\"UID\" value=\"$UID\"/>"
 		?>
 		</br>

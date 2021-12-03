@@ -161,12 +161,12 @@ VALUE
         ('5','19','7'),
         ('3','19','1');
 
-INSERT  INTO    ORDERSTATUS(UID,IID,EMPID,STATUS,NOTE)
+INSERT  INTO    ORDERSTATUS(UID,EMPID,STATUS,NOTE)
 VALUE
-        ('2','12','4','Finish',''),
-        ('1','5','5','Pending','Please call me when arrive.'),
-        ('5','2','1','Finish',''),
-        ('6','2','5','Shipping',''),
-        ('3','12','4','Pending',''),
-        ('4','17','3','Finish','Please call me when arrive.'),
-        ('7','1','3','Shipping','');
+        ('2','4','Finish',''),
+        ('1','5','Pending','Please call me when arrive.'),
+        ('5','1','Finish',''),
+        ('6','5','Shipping',''),
+        ('3','4','Pending',''),
+        ('4','3','Finish','Please call me when arrive.'),
+        ('7','3','Shipping','');
